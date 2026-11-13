@@ -15,8 +15,8 @@ export function Footer() {
           <div className="max-w-md">
             <p className="font-serif text-3xl tracking-tight text-text">{site.name}</p>
             <p className="mt-3 text-sm leading-relaxed text-muted">
-              {site.role}. Building scalable full-stack systems with Spring Boot,
-              React, and event-driven architecture.
+              {site.role} · Building scalable systems with Spring Boot, React,
+              and event-driven architecture.
             </p>
           </div>
 

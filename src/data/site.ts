@@ -1,6 +1,6 @@
 export const site = {
   name: 'Tarwinder Singh',
-  role: 'Software Engineer | Full Stack',
+  role: 'Full Stack Software Engineer',
   tagline:
     'Building scalable systems with Spring Boot, React, and event-driven architecture.',
   location: 'Kolkata, India',
@@ -35,46 +35,49 @@ export const site = {
   about: {
     title: 'Full-stack engineer focused on scale, security, and delivery',
     paragraphs: [
-      'Software Engineer with 3+ years of full-stack experience building scalable applications using Spring Boot, React, Kafka, and Docker. Led platform enhancements, security upgrades, and system migrations that improved user engagement and reduced operational turnaround time.',
-      'Strong in designing REST APIs, event-driven systems, authentication, and performance optimization — and I care about shipping systems teams can maintain under real production pressure.',
-      'Currently at Reloy as an SDE, I work across the stack on loyalty-platform features, rewards systems, security hardening, and event-driven infrastructure that makes shipping safer and faster.',
+      'Full Stack Software Engineer with 3+ years of experience delivering scalable, high-throughput systems using Java (Spring Boot) and React. Led platform enhancements, multi-tenant security upgrades, and microservice integrations that improved user engagement and reduced operational turnaround time.',
+      'Strong in designing RESTful APIs, event-driven architectures (Kafka), distributed caching (Redis), and frontend performance optimization — shipping resilient systems that scale cleanly under real production traffic.',
+      'Currently at Reloy as an SDE, I work across the stack on real estate loyalty platforms, event-driven rewards ledgers, third-party fintech integrations, and automated reconciliation pipelines.',
     ],
     traits: [
       'Spring Boot',
       'React.js',
-      'Kafka',
+      'Apache Kafka',
+      'Microservices',
       'Docker',
-      'REST APIs',
-      'Event-driven systems',
-      'Authentication',
-      'Performance',
+      'Redis',
+      'RESTful APIs',
+      'System Design',
     ],
     highlights: [
-      { label: 'Experience', value: '3+' },
+      { label: 'Experience', value: '3+ Years' },
       { label: 'Engagement lift', value: '20%+' },
       { label: 'Ops turnaround', value: '−60%' },
     ],
     focus:
-      'Platform enhancements, security upgrades, event-driven systems, and full-stack product delivery.',
+      'Event-driven microservices, platform security & multi-tenancy, high-throughput APIs, and full-stack product delivery.',
     education:
       'BTech in CSE — Techno Main Salt Lake (MAKAUT), Kolkata · Graduated 2023',
   },
   experience: [
     {
-      role: 'Software Development Engineer (SDE)',
+      role: 'Software Development Engineer (Full Stack)',
       company: 'Reloy',
       period: 'Oct 2023 — Present',
       bullets: [
-        'Led end-to-end enhancements on the real estate loyalty platform, including advanced analytics, external integrations (Webengage, Razorpay, LSQ), and a contest module — driving 20%+ higher user engagement and referral conversions.',
-        'Spearheaded security and infrastructure upgrades (Spring Security with OTP/JWT, data encryption, rate limiting, Kafka-based payments), improving maintainability and reducing operational turnaround time by ~60%.',
-        'Designed and scaled the Rewards system (ledger, delivery, redemption, bulk uploads, payment reconciliation) with event-driven updates and retry mechanisms, improving customer retention and post-sale experience.',
+        'Architected end-to-end features on the loyalty platform using React and Spring Boot, driving a 20%+ lift in user engagement and referral conversions through advanced analytics and contest workflows.',
+        'Integrated external platforms (Razorpay, WebEngage, LeadSquared) via robust REST APIs and asynchronous webhook processors, streamlining payment workflows and lead-tracking pipelines.',
+        'Designed and scaled an event-driven Rewards ledger via Apache Kafka and Redis caching, implementing retry queues and automated payment reconciliation to enhance customer retention.',
+        'Hardened platform security with Spring Security (JWT/OTP) and multi-tenant RBAC, slashing operational turnaround time by ~60% and strengthening tenant data isolation.',
+        'Accelerated client dashboard load performance by 40% via Redux Toolkit state normalization, dynamic code splitting, and debounced queries.',
       ],
       concepts: [
-        'Event-driven Architecture',
-        'Distributed Systems',
-        'API Design',
-        'Security & Authentication',
-        'Performance Optimization',
+        'Microservices Architecture',
+        'Event-Driven Systems',
+        'REST APIs & Webhooks',
+        'Multi-Tenant RBAC',
+        'State Management & Caching',
+        'Database Optimization',
       ],
     },
     {
@@ -82,14 +85,14 @@ export const site = {
       company: 'Informatica',
       period: 'Jul 2022 — Jul 2023',
       bullets: [
-        'Contributed to the cloud platform’s administrator and data integration services, enhancing functionality and resolving performance challenges.',
-        'Played a key role in migrating multiple components from JSP to React, improving performance and reducing debugging time by 20%.',
-        'Revamped the administrator dashboard with improved charting, interactive popups, and metrics tables — increasing customer satisfaction and data visibility.',
+        'Migrated cloud administrator console modules from legacy JSP to modular React components, improving maintainability and cutting debugging overhead by 20%.',
+        'Revamped telemetry and administrator dashboards with interactive charting, modal workflows, and responsive metric tables to boost system visibility and customer satisfaction.',
+        'Integrated client-side interfaces with cloud RESTful APIs, implementing robust error handling, form validation, and optimistic UI updates to ensure seamless data flow.',
       ],
       concepts: [
         'Frontend Migration',
         'Performance Optimization',
-        'Dashboard Development',
+        'Telemetry Dashboards',
         'Component Architecture',
         'Data Visualization',
       ],
@@ -102,7 +105,7 @@ export const site = {
       problem:
         'Shipping features behind full deploys is slow and risky. Teams need progressive rollouts, sticky targeting, and a safe way for client apps to evaluate flags without rebuilding for every change.',
       solution:
-        'Built an end-to-end feature flag platform: sticky percentage and multivariate evaluation, progressive rollout sagas, dual auth (JWT dashboard + SDK API keys), CQRS with domain events, and a React operator dashboard. Supports in-memory or Redis eval cache and optional Kafka event publishing, with Docker modes from local H2 to full stack.',
+        'Built an end-to-end feature flag platform featuring sticky percentage and multivariate evaluation, progressive rollout sagas, dual auth (JWT dashboard + SDK API keys), and a real-time React/Redux admin dashboard. Implemented CQRS architecture with domain events, Redis evaluation caching, and Kafka event streaming for flexible, low-latency deployments across Docker environments (from local H2 to full stack).',
       tech: [
         'Java 21',
         'Spring Boot',
@@ -116,7 +119,7 @@ export const site = {
         'Kafka',
       ],
       outcome:
-        'Demonstrates full-stack product design: evaluation correctness (sticky buckets), dual authentication, event-driven writes, and production-minded deploy modes — not just a UI mock.',
+        'Demonstrates full-stack systems engineering: sticky bucket evaluation correctness, dual authentication models, event-driven writes, and production-grade deployment modes.',
       badge: 'Primary · Open source',
       href: 'https://github.com/RAW85/flagforge',
       linkLabel: 'GitHub',
@@ -130,7 +133,7 @@ export const site = {
       problem:
         'Content products need a clean path from signup to paid access: one-month plans, tiered libraries, and secure unlocks without overbuilding billing infrastructure.',
       solution:
-        'Developed a MERN subscription app where users purchase one-month Basic / Standard / Premium plans via Stripe Checkout and unlock matching articles for 30 days with no auto-renew. Higher plans include lower-tier content. JWT auth, plan-gated access control, and a modern React + Tailwind UI for landing, plans, and library.',
+        'Built a tiered content access platform where users purchase one-month Basic / Standard / Premium plans via Stripe billing cycles and unlock matching articles for 30 days without auto-renew. Higher tiers inherit access to lower-tier content. Features JWT authentication, plan-based access control, and a responsive Tailwind/React UI.',
       tech: [
         'React',
         'TypeScript',
@@ -142,7 +145,7 @@ export const site = {
         'Stripe',
       ],
       outcome:
-        'Demonstrates product-minded full-stack delivery: payments, auth, tiered authorization, and a polished subscription UX end to end.',
+        'Demonstrates product-minded full-stack delivery: payment integration, tiered authorization, security best practices, and a polished subscription UX.',
       badge: 'Full-stack · MERN',
       href: 'https://github.com/RAW85/Suberscribe',
       linkLabel: 'GitHub',
@@ -154,15 +157,19 @@ export const site = {
     title: 'Tools I ship with',
     groups: [
       {
-        label: 'Java & Spring',
+        label: 'Backend',
         items: [
           'Java',
           'Spring Boot',
-          'REST APIs',
+          'Microservices',
           'Spring Security',
+          'Hibernate / JPA',
+          'RESTful APIs',
           'JWT',
           'JUnit',
-          'TestNG',
+          'Mockito',
+          'Node.js',
+          'Express.js',
         ],
       },
       {
@@ -172,30 +179,32 @@ export const site = {
           'Redux Toolkit',
           'TypeScript',
           'JavaScript',
-          'HTML',
-          'CSS',
+          'Context API',
           'Tailwind CSS',
+          'Vite',
+          'HTML5 & CSS3',
         ],
       },
       {
-        label: 'Node & data',
+        label: 'Data & Messaging',
         items: [
-          'Node.js',
-          'Express.js',
+          'Apache Kafka',
+          'Redis (Caching)',
+          'PostgreSQL',
+          'MySQL',
           'MongoDB',
-          'SQL',
-          'Redis',
-          'Kafka',
         ],
       },
       {
-        label: 'Tooling & foundations',
+        label: 'Architecture & DevOps',
         items: [
           'Docker',
+          'CI/CD',
           'Git',
-          'DSA',
-          'System Design',
           'Event-Driven Architecture',
+          'CQRS',
+          'System Design',
+          'DSA',
         ],
       },
     ],
